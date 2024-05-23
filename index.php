@@ -17,3 +17,4 @@ swith ($page) {
     $controller = new AccueilController();
     $controller->index();
     break;
+}
