@@ -8,7 +8,12 @@ $page = isset($_GET['page']) ? $_GET['page'] : '';
 
 swith ($page) {
   case 'accueil':
-  require_once('controllers/AccueilController.php');
-  $controller = new AccueilController();
-  $controller->index();
-  break;
+    require_once('controllers/AccueilController.php');
+    $controller = new AccueilController();
+    $controller->index();
+    break;
+  default:
+    require_once('controllers/AccueilController.php');
+    $controller = new AccueilController();
+    $controller->index();
+    break;
